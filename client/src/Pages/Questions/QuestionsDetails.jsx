@@ -124,21 +124,10 @@ const QuestionsDetails = () => {
                                         </section>
                                     )
                                 }
-                                 {
-                                    question.noOfComments !== 0 && (
-                                        <section>
-                                            <h3>{question.noOfComments} Comments</h3>
-                                            <DisplayComment key={question._id} question={question} handleShare={handleShare}/>
-                                        </section>
-                                    )
-                                }
+                                 
                                 
                                 <section className='post-ans-container'>
-                                <h3>Your Comment</h3>
-                                    <form onSubmit={ (e) => { handlePostCom(e, question.comment.length) }}>
-                                        <textarea name="" id="" cols="20" rows="05" onChange={e => setComment(e.target.value)}></textarea><br />
-                                        <input type="Submit" className='post-ans-btn' value='Post Your Comment'/>
-                                    </form>
+                               
                                     <h3>Your Answer</h3>
                                     <form onSubmit={ (e) => { handlePostAns(e, question.answer.length) }}>
                                         <textarea name="" id="" cols="30" rows="10" onChange={e => setAnswer(e.target.value)}></textarea><br />
