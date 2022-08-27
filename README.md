@@ -1,6 +1,7 @@
 # AsknGet
 
-### This is a qna website where a user can ask questions or doubts related to computer 
+### This is a web application that help users to ask doubts and get answers on a wide range of topics in computer programming
+### This app only accept questions about programming that are tightly focused on a specific problem
 
 ## Login Page
 <p>
